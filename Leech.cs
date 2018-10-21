@@ -15,13 +15,7 @@ public class Leech : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Xenolith.xenoVision == true)
-        {
-            thisCreature.enabled   = true;
-        } else if(Xenolith.xenoVision == false)
-        {
-            thisCreature.enabled  = false;
-        }
+		thisCreature.enabled = Xenolith.xenoVision
         //Debug.Log("xenoVision is " + Xenolith.xenoVision);
 	}
 }
